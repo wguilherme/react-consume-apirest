@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import api from "../../services/api"
 import './style.css';
 
+
 export default class Main extends Component {
 
     //state
@@ -30,25 +31,17 @@ export default class Main extends Component {
         <div className="pet-list">
             {pets.map(pet => (
 
-           <article key={pet._id}>
+            <article key={pet._id}>
 
             <h2><strong>{pet.animal}</strong></h2>
             <p>{pet.raca}</p>
             <p>{pet.cor}</p>
             <p>{pet.status}</p>
             
-
             <a href="">Acessar</a>
             </article> 
- 
-           
-           
            ))}
-
         </div>
-
-
-
 
     )
     }
